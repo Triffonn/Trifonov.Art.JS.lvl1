@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhoneList</title>
+</head>
+<body>
+    <script>
+         var users = [
+	{
+		firstName: 'Dmitry',
+		lastName: 'Kozlov',
+		birthDay: '16.07.1990',
+		phones: [
+			'89001234567',
+			'83431234567'
+		] 
+	},
+	{
+		firstName: 'Ivan',
+		lastName: 'Petrov',
+		birthDay: '08.06.1956',
+		phones: [
+			'89001234567',
+			'83431234567'
+		] 
+	}
+]
+        var user={}
+        //Insert new users information from prompt
+        user.firstName=prompt("Insert user's name");
+        user.lastName=prompt("Insert user's surname");
+        user.birthDay=prompt("Insert user's birthday");
+        user.phones=[];
+        user.phones[0]=prompt("Insert user's phone");
+        // Add user's information in common array
+        users.push(user);
+        
+       for (var i=0;i<users.length;++i){
+            console.log("Имя "+users[i].firstName,
+                       "Фамилия "+users[i].lastName,
+                       "Дата рождения "+users[i].birthDay,
+                       "Телефон "+users[i].phones.join(" ,"));
+        }    
+    </script>
+
+
+</body>
+</html>

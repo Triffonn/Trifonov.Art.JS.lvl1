@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex2</title>
+</head>
+<body>
+    <script>
+        for(var i=1;i<=8;i++){
+            for (var j=1;j<=8;j++){
+                if(i%2==0){
+                    if(j%2==0){
+                       document.write("#"); 
+                    }else{
+                       document.write("&nbsp");  
+                    }
+                }else{
+                    if(j%2!=0){
+                       document.write("#"); 
+                    }else{
+                       document.write("&nbsp");  
+                    }
+                }
+                if(j==8){
+                    document.write("<br/>");
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
