@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex1</title>
+</head>
+<body>
+   <script>
+       var a=prompt("input first number")
+       var b=prompt("insert second number")
+       console.log(minimum(a,b))
+       
+       function minimum(num1,num2){
+           if (num1==num2){
+               return "Эти числа равны";
+           }
+           else{
+               var result="Наименьшее число ";
+               return result+=(num1<num2)?num1:num2;
+           }
+       }
+    </script>
+    
+</body>
+</html>

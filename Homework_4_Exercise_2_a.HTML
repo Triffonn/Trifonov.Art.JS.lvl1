@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex2</title>
+</head>
+<body>
+    <script>
+        var word=prompt("Write any word")
+        var letter=prompt("Insert any letter in this word")
+        console.log(CountLetter(word,letter))    
+        function CountLetter(word,letter){
+            var cnt=[]
+            for(i=0;i<word.length;i++){
+                if(word.charAt(i).toUpperCase()==letter.toUpperCase()){
+                    cnt.push(i);
+                }
+            }
+            cnt.join(" ,")
+        return "Letter "+letter+" on position "+cnt  
+        }
+    </script>
+</body>
+</html>
