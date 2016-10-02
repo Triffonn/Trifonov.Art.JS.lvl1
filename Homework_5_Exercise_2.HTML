@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+</head>
+<body>
+<script>
+    numbers = String(prompt("Inter any number from 0 to 999"))
+    inobject(numbers)
+    function inobject(numbers) {
+        if (numbers <= 999 && numbers >= 0) {
+            var Newobject = {}
+            Newobject['Сотни'] = numbers.charAt(2);
+            Newobject['Десятки'] = numbers.charAt(1);
+            Newobject['Единицы'] = numbers.charAt(0);
+            console.log(Newobject)
+        }
+        else {
+            alert("Error. Number should be placed between 0 and 999")
+        }
+
+
+    }
+</script>
+</body>
+</html>
