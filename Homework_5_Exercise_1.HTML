@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex1</title>
+</head>
+<body>
+<p>Input color in RGB format then press button Get Hex</p>
+<input type="text" placeholder="Input red value" id="red" style="background-color: red">
+<input type="text" placeholder="Input green value" id="green" style="background-color: green">
+<input type="text" placeholder="Input blue value" id="blue" style="background-color: blue">
+<input type="button" value="Get HEX" onclick="toHEX(red.value,green.value,blue.value)">
+<p>Result</p>
+<input type="text" placeholder="result" id="result">
+<script>
+    function toHEX(a, b, c) {
+        if (a <= 255 && b <= 255 && c <= 255) {
+            color = "#" + parseInt(a).toString(16) + parseInt(b).toString(16) + parseInt(c).toString(16)
+            result.value = color;
+            result.style.backgroundColor = color;
+        }
+        else {
+            result.value = "Error"
+        }
+    }
+</script>
+</body>
+</html>
