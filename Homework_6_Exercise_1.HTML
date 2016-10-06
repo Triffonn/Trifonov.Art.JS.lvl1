@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex1</title>
+</head>
+<body>
+<script>
+    var array=[1,2,3]
+    console.log(Inarray(array));
+
+    function Inarray(Array){
+        var someobject={}
+        for (var i=Array.length-1;i>-1;i--){
+            if (i==Array.length-1){
+                someobject=makeobject(Array[i],null);
+            }
+            else{
+                someobject=makeobject(Array[i],someobject)
+            }
+        }
+        return someobject
+    }
+
+    function makeobject(value1,value2){
+        var newobject={}
+        return newobject={
+            value:value1,
+            rest:value2,
+        }
+    }
+
+
+</script>
+</body>
+</html>

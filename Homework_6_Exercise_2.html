@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex2</title>
+</head>
+<body>
+<script>
+    //First way with reverse
+    var NewArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    console.log(reverse(NewArray));
+    function reverse(Array) {
+        return Array.reverse()
+    }
+    //Second way without reverse
+    var SecondArray = [10, 20, 30, 40, 50, 60, 90, 100]
+    console.log(Reverse2(SecondArray));
+    function Reverse2(Array) {
+        var SecondArray = [];
+        for (var i = Array.length - 1; i > -1; i--) {
+            SecondArray.push(Array[i]);
+        }
+        return SecondArray
+    }
+</script>
+</body>
+</html>
